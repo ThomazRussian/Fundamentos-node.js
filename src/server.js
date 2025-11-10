@@ -8,6 +8,7 @@ import http from 'node:http'
 
 // Create user ( name, email, password)
 //Rotas diferentes para:
+
 // Criar usuarios
 // Listangem de Usuarios 
 // Edicao de Usuarios
@@ -39,6 +40,7 @@ import http from 'node:http'
 
 // Cabecalhos (Requisiccao/resposta) => Metadados.
 
+// HTTP Status Code
 
 const users = []
 
@@ -55,7 +57,7 @@ const server = http.createServer((req, res) => {
         users.push({
             id: 1,
             name:"John Doe",
-            email:"johndoe@example.com"
+            email:"johndoe@example.com",
         })
 
         return res.writeHead(201).end()
